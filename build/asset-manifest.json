@@ -1,6 +1,13 @@
 {
+<<<<<<< HEAD
   "main.css": "static/css/main.3c8f75da.css",
   "main.css.map": "static/css/main.3c8f75da.css.map",
   "main.js": "static/js/main.a25cc584.js",
   "main.js.map": "static/js/main.a25cc584.js.map"
+=======
+  "main.css": "static/css/main.33be8853.css",
+  "main.css.map": "static/css/main.33be8853.css.map",
+  "main.js": "static/js/main.1ace5225.js",
+  "main.js.map": "static/js/main.1ace5225.js.map"
+>>>>>>> Patch the App and Theme
 }
