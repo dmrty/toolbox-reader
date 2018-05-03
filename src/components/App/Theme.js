@@ -12,10 +12,9 @@ const base = {
 
 export const Theme = styled.div`
   background: ${config.bodyBackground || base.white};
-  color: ${config.bodyForeground || base.black};
 
-  h1, h2, h3, h4, h5, h6 {
-    color: ${config.headingForeground || base.black};
+  .tlbx-h1, .tlbx-h2, .tlbx-h3, .tlbx-h4, .tlbx-h5, .tlbx-h6, .tlbx-notes {
+    color: ${config.bodyForeground || base.black};
   }
 
   .tlbx-toolbar-btn { color: ${config.toolbarIconsForeground || base.white}; }
