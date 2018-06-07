@@ -57,9 +57,10 @@ class SidebarDocs extends Component {
               </span>
             );
           }
-
+          console.debug('Before hasIndexMDHtml.includes()');
           const hasIndexMd = dir[item].f.includes('index.md');
           const hasIndexHtml = dir[item].f.includes('index.html');
+          console.debug('Adfter hasIndexMDHtml.includes()');
           const index = hasIndexMd ? '--index.md' : hasIndexHtml ? '--index.html' : '';
 
           return (

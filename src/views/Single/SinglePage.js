@@ -35,10 +35,12 @@ class SinglePage extends Single {
     const linkParent = parentUrl(e.target);
     if (linkParent) {
       e.preventDefault();
+      console.debug('Before linkParent.includes()');
       if (linkParent.href.includes('pages')) {
         const slug = linkParent.href.split('pages/').slice(-1)[0];
         this.props.history.push(`/pages/${slug}`);
       }
+      console.debug('After linkParent.includes()');
     }
   }
 

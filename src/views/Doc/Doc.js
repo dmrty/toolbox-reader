@@ -31,7 +31,9 @@ class Doc extends Component {
 
   getContent(props) {
     if (props.docs.current_doc.content.length <= 1) {
+      console.debug('Before homeFile.includes()');
       const homeFile = props.docs.docs_list.f && props.docs.docs_list.f.includes('index.md') ? 'index.md' : 'index.html';
+      console.debug('After homeFile.includes()');
       const slug = props.match.params.slug || homeFile;
 
       this.setState({ homeFile });

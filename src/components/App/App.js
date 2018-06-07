@@ -55,7 +55,9 @@ class App extends Component {
 
   render() {
     // Remove styleguide shell from pages and full render of components
+    console.debug("Before hasStyleguideShell.includes()");
     const hasStyleguideShell = !this.props.location.pathname.includes('/pages/') && !this.props.location.pathname.match(/\/full\/?$/);
+    console.debug("After hasStyleguideShell.includes()");
     const fullHome = window.fullhome || false;
     const hasHomeStyleguideShell = !(fullHome && this.props.location.pathname === '/');
 
